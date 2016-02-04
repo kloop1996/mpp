@@ -1,0 +1,1115 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm9="http://schemas.microsoft.com/dsltools/UseCaseModel" xmlns:dm10="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner"
+  dslVersion="1.0.0.0"
+  Id="635da47b-989a-4de6-b6a5-0b4b1a10d649"
+  name="ModelingProject1" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <profileInstances>
+    <packageHasProfileInstances
+      Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b">
+      <profileInstance
+        Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791"
+        name="StandardProfileL2" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances
+      Id="29349502-908c-4fda-9054-c48619c59ed0">
+      <profileInstance
+        Id="532ea607-fb19-44b8-8502-3351b05452be"
+        name="StandardProfileL3" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <packageHasNamedElement>
+      <actor
+        Id="87e03aaa-06a8-4274-941e-3b1f34de192b"
+        name="Freighter"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="68e60775-009c-427e-91cf-db5f7b9423f9"
+            isDerived="false"
+            sourceEndRoleName="Freighter"
+            targetEndRoleName="Registration"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="81246218-c91e-4585-b5e0-26e6e26068ed"
+              LastKnownName="Registration"
+              LastKnownLocation="ModelingProject1.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="202a8886-7f54-48b8-ac4c-5dbbceafe367"
+                  name="Freighter"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="16109550-a9f0-4d87-86c8-c45d078902a0"
+                  name="Registration"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="a5ec4392-3805-4161-b2cd-0fb77db5bd27"
+            isDerived="false"
+            sourceEndRoleName="Freighter"
+            targetEndRoleName="waybill"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="0edff377-de5d-4344-b75b-18ebbd520b0d"
+              LastKnownName="Generate waybill"
+              LastKnownLocation="ModelingProject1.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="f80ebe66-af98-4f5b-8dd8-8887617cd1a3"
+                  name="Freighter"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="a63d2a4a-8048-43ac-8dd3-47e6d6fd61c0"
+                  name="waybill"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="b18bee50-e309-41ec-be16-00c875e5d7b3"
+            isDerived="false"
+            sourceEndRoleName="Freighter"
+            targetEndRoleName="Generate contract"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="5df92122-9f67-4c98-92e0-604cda633741"
+              LastKnownName="Generate contract"
+              LastKnownLocation="ModelingProject1.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="87cbced4-2db7-4b60-8c73-61fb9c2134d5"
+                  name="Freighter"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="444ac31a-77cd-4d22-9c8c-96d14f87e14f"
+                  name="Generate contract"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </actor>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <actor
+        Id="5ec70669-74da-44fa-ab8f-b4c88e56f605"
+        name="Shipper"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="aefee4ed-2787-418c-9def-c3de72f7f426"
+            isDerived="false"
+            sourceEndRoleName="Shipper"
+            targetEndRoleName="Registration"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="81246218-c91e-4585-b5e0-26e6e26068ed"
+              LastKnownName="Registration"
+              LastKnownLocation="ModelingProject1.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="b8582e47-0e05-4785-a135-8c83274caa5d"
+                  name="Shipper"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="b1f1b1b2-9be4-46db-8e5a-8750524d6b5a"
+                  name="Registration"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="5daa5012-6a34-4c68-8d8f-0b576ee58926"
+            isDerived="false"
+            sourceEndRoleName="Shipper"
+            targetEndRoleName="Generate delivery note"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="1dcd3554-e09f-46a4-9b3e-3b0c6f64dca6"
+              LastKnownName="Generate delivery note"
+              LastKnownLocation="ModelingProject1.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="f6664379-da32-48ee-bd99-0441931c2e87"
+                  name="Shipper"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="a546679b-57f8-443d-8e3a-60766b81fc5c"
+                  name="Generate delivery note"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="1c7f60a8-9605-4a63-b87d-ef476c47dba0"
+            isDerived="false"
+            sourceEndRoleName="Shipper"
+            targetEndRoleName="Generate application"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="25498578-e890-4280-acad-a5b542752b4a"
+              LastKnownName="Generate application"
+              LastKnownLocation="ModelingProject1.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="ed74d72e-c412-4d6b-8de0-fd433dbc429e"
+                  name="Shipper"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="9df446a3-ea2a-4615-a124-6f163989de1d"
+                  name="Generate application"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="a48b8910-3fd9-4776-aa72-afc5190c52ab"
+            isDerived="false"
+            sourceEndRoleName="Shipper"
+            targetEndRoleName="UseCase1"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="91f9976b-b531-4da8-a918-c99cc939e04c"
+              LastKnownName="Generate invoice"
+              LastKnownLocation="ModelingProject1.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="d8aac126-0a2d-4bff-8c13-4be23d0c691d"
+                  name="Shipper"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="ba89d49f-a1fd-447d-82a4-c7595dd144de"
+                  name="UseCase1"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="c454ee65-84e4-4a82-8199-58ea423b957f"
+            isDerived="false"
+            sourceEndRoleName="Shipper"
+            targetEndRoleName="Generate contract"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="5df92122-9f67-4c98-92e0-604cda633741"
+              LastKnownName="Generate contract"
+              LastKnownLocation="ModelingProject1.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="b9083a45-514c-4714-93b6-8767772c8525"
+                  name="Shipper"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="70afa001-72ed-414d-8f8e-5b5fe21ebb3c"
+                  name="Generate contract"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </actor>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <actor
+        Id="4f7561f4-d65c-47be-98bb-871c24486148"
+        name="Forwader"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="a9060a25-0563-47a1-949d-75ced905afd3"
+            isDerived="false"
+            sourceEndRoleName="Forwader"
+            targetEndRoleName="Registration"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="81246218-c91e-4585-b5e0-26e6e26068ed"
+              LastKnownName="Registration"
+              LastKnownLocation="ModelingProject1.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="d1d3c911-6241-4c6f-90a5-45bc27026e8f"
+                  name="Forwader"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="7f450479-a293-4967-bd55-846901056519"
+                  name="Registration"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="da590044-52dc-411d-a0ec-5692d58d8170"
+            isDerived="false"
+            sourceEndRoleName="Forwader"
+            targetEndRoleName="Generate delivery note"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="1dcd3554-e09f-46a4-9b3e-3b0c6f64dca6"
+              LastKnownName="Generate delivery note"
+              LastKnownLocation="ModelingProject1.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="7ce6a3f7-dd7c-4de1-8f8d-ec329b111026"
+                  name="Forwader"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="6f31fb8e-928a-4326-9efa-4922394e171a"
+                  name="Generate delivery note"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="cdc86505-d835-4960-a33b-d4d20a85c08c"
+            isDerived="false"
+            sourceEndRoleName="Forwader"
+            targetEndRoleName="Generate application"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="25498578-e890-4280-acad-a5b542752b4a"
+              LastKnownName="Generate application"
+              LastKnownLocation="ModelingProject1.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="5f044c99-fd4f-47a3-9e4f-ba567fb503f6"
+                  name="Forwader"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="c13b2d47-4056-4e0e-b299-7e69f1ed7a12"
+                  name="Generate application"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="c79ff356-99ea-456c-b0a3-e4d43a5e8502"
+            isDerived="false"
+            sourceEndRoleName="Forwader"
+            targetEndRoleName="UseCase1"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="91f9976b-b531-4da8-a918-c99cc939e04c"
+              LastKnownName="Generate invoice"
+              LastKnownLocation="ModelingProject1.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="b804bfa8-c289-4bf2-bb66-0e3420f5083a"
+                  name="Forwader"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="9378d019-9aee-45dd-85e5-51c80c0d12de"
+                  name="UseCase1"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="ee1eb7ae-58c0-4087-a7e4-e35a39ea0e31"
+            isDerived="false"
+            sourceEndRoleName="Forwader"
+            targetEndRoleName="Generate contract"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="5df92122-9f67-4c98-92e0-604cda633741"
+              LastKnownName="Generate contract"
+              LastKnownLocation="ModelingProject1.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="8dd00019-0a05-41cd-b6f9-e1b3ea315181"
+                  name="Forwader"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="d3e31c73-d55e-470d-b706-7a2b05f8c246"
+                  name="Generate contract"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </actor>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="81246218-c91e-4585-b5e0-26e6e26068ed"
+        name="Registration"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <actor
+        Id="9b8705b2-65d0-4008-89e9-7abde986b3ce"
+        name="Actor1"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="0edff377-de5d-4344-b75b-18ebbd520b0d"
+        name="Generate waybill"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="1dcd3554-e09f-46a4-9b3e-3b0c6f64dca6"
+        name="Generate delivery note"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="25498578-e890-4280-acad-a5b542752b4a"
+        name="Generate application"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="91f9976b-b531-4da8-a918-c99cc939e04c"
+        name="Generate invoice"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <actor
+        Id="9debcc7b-8cb4-464b-840a-cdbae86a6c25"
+        name="Actor2"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="5df92122-9f67-4c98-92e0-604cda633741"
+        name="Generate contract"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <activity
+        Id="19eac3c9-bec5-4e36-82b7-51abf0f5e79e"
+        name="Mpp_activity"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false"
+        isReentrant="false"
+        isReadOnly="false"
+        isSingleExecution="false">
+        <nodes>
+          <activityFinalNode
+            Id="e502e3bc-e256-470d-b225-abebf41d70c8"
+            name="ActivityFinal1"
+            isLeaf="false" />
+          <opaqueAction
+            Id="4303d721-0688-4f39-830a-a316b62468c7"
+            name="Autorization"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="ddada1bf-1fb3-4a43-9236-c8f1d706e45d"
+                isLeaf="false">
+                <mergeNodeMoniker
+                  Id="7debc6f2-014e-4ccb-a4f7-ede99499de66"
+                  LastKnownName="Merge5"
+                  LastKnownLocation="ModelingProject1.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="67b6841e-7e46-44a6-a609-14b728cfd945"
+            name="Print menu"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="d518eb8e-3f05-45de-add8-cf9261226e7b"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="161c5942-4db4-4c71-82e0-ddb45007f66e"
+                  LastKnownName="Get user request"
+                  LastKnownLocation="ModelingProject1.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="161c5942-4db4-4c71-82e0-ddb45007f66e"
+            name="Get user request"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="78eff3dd-28f0-4b68-be83-cad360db2160"
+                isLeaf="false">
+                <decisionNodeMoniker
+                  Id="2d3241dd-c51b-4529-9001-89566ff63209"
+                  LastKnownName="Decision1"
+                  LastKnownLocation="ModelingProject1.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <decisionNode
+            Id="2d3241dd-c51b-4529-9001-89566ff63209"
+            name="Decision1"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="b6fecf8f-74de-4394-8113-6f45709481e7"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="444dc29f-06c3-4a0f-8b4c-1c4665083c8d"
+                  LastKnownName="Exit"
+                  LastKnownLocation="ModelingProject1.uml" />
+              </controlFlow>
+              <controlFlow
+                Id="8e81da1d-b1e8-48c3-a765-9ad84bcfc5a1"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="14af19aa-3b34-439e-a62c-067cddccf179"
+                  LastKnownName="Create"
+                  LastKnownLocation="ModelingProject1.uml" />
+              </controlFlow>
+              <controlFlow
+                Id="e3df665f-59d2-44bf-b9a7-2fd6d2119225"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="a491ee08-8416-46ac-aa64-7cae2ae8a168"
+                  LastKnownName="Find"
+                  LastKnownLocation="ModelingProject1.uml" />
+              </controlFlow>
+              <controlFlow
+                Id="8ccd8b32-cf5f-4295-959e-0b7ead082ca9"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="cb79c4b3-c650-4b5b-946b-3fdfbd7ee145"
+                  LastKnownName="Send"
+                  LastKnownLocation="ModelingProject1.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <opaqueAction
+            Id="bdb62366-4314-4507-8013-200c41a3ada1"
+            name="Find driwers"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="48442f22-3120-4bb3-ab24-67ef4225e736"
+                isLeaf="false">
+                <mergeNodeMoniker
+                  Id="107edb1e-9571-4a96-a80e-b0ef15e66928"
+                  LastKnownName="Merge1"
+                  LastKnownLocation="ModelingProject1.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="3cd3647f-c920-4d6a-820c-1ed099501064"
+            name="Find shippers"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="c9391a07-07da-457b-96fd-dd675028f776"
+                isLeaf="false">
+                <mergeNodeMoniker
+                  Id="107edb1e-9571-4a96-a80e-b0ef15e66928"
+                  LastKnownName="Merge1"
+                  LastKnownLocation="ModelingProject1.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="ee2d0147-44e4-429d-b7fe-dfe2ea299c27"
+            name="Find forwarder"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="fdb1cdae-09ce-40b4-8686-9313b1e37d59"
+                isLeaf="false">
+                <mergeNodeMoniker
+                  Id="107edb1e-9571-4a96-a80e-b0ef15e66928"
+                  LastKnownName="Merge1"
+                  LastKnownLocation="ModelingProject1.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="5ca8da45-859a-47aa-883c-cd087f503ed9"
+            name="Create waybill"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="a7be206f-1797-4811-a5a1-a335701a3f62"
+                isLeaf="false">
+                <mergeNodeMoniker
+                  Id="ccdb439a-44c8-4116-acc7-6168d04ad490"
+                  LastKnownName="Merge2"
+                  LastKnownLocation="ModelingProject1.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="58e6be90-1ff1-4b92-beb8-23870dfc08d4"
+            name="Create invoice"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="23aba4fb-04ad-4998-ac54-9529e70ac60c"
+                isLeaf="false">
+                <mergeNodeMoniker
+                  Id="ccdb439a-44c8-4116-acc7-6168d04ad490"
+                  LastKnownName="Merge2"
+                  LastKnownLocation="ModelingProject1.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="a6d2707a-a7ec-4090-a31e-6d6cda9bd004"
+            name="Create score"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="6825bc4c-5abd-4555-8ae4-c0c1dd1284b1"
+                isLeaf="false">
+                <mergeNodeMoniker
+                  Id="ccdb439a-44c8-4116-acc7-6168d04ad490"
+                  LastKnownName="Merge2"
+                  LastKnownLocation="ModelingProject1.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="a491ee08-8416-46ac-aa64-7cae2ae8a168"
+            name="Find"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="d16ee428-24d6-4de5-b48a-a42ece9ce95f"
+                isLeaf="false">
+                <decisionNodeMoniker
+                  Id="22dc6f40-50ee-4661-a57c-e8b11098c5fd"
+                  LastKnownName="Decision2"
+                  LastKnownLocation="ModelingProject1.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="14af19aa-3b34-439e-a62c-067cddccf179"
+            name="Create"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="4160f826-8ffc-437c-8128-22e12d4fc16e"
+                isLeaf="false">
+                <decisionNodeMoniker
+                  Id="1805856a-b2a8-4e85-bda0-5b7fdadf8f19"
+                  LastKnownName="Decision3"
+                  LastKnownLocation="ModelingProject1.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="cb79c4b3-c650-4b5b-946b-3fdfbd7ee145"
+            name="Send"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="2675a4ea-0c1f-49b2-b3fa-661a1036b549"
+                isLeaf="false">
+                <decisionNodeMoniker
+                  Id="dc504c71-c9d6-464b-bfab-d8f3011ffa0c"
+                  LastKnownName="Decision4"
+                  LastKnownLocation="ModelingProject1.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="2a35eeb1-98a4-4274-b5e3-6d4cd5b16899"
+            name="Send score"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="513da9d4-0800-4945-b451-975be3f13283"
+                isLeaf="false">
+                <mergeNodeMoniker
+                  Id="1ac19279-f76f-4733-a076-d8e12199e3a9"
+                  LastKnownName="Merge3"
+                  LastKnownLocation="ModelingProject1.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="185772de-679a-4146-97f5-6634173f4c0e"
+            name="Send waybill"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="990d7092-6c2c-4298-b6e5-aae4c4d151c3"
+                isLeaf="false">
+                <mergeNodeMoniker
+                  Id="1ac19279-f76f-4733-a076-d8e12199e3a9"
+                  LastKnownName="Merge3"
+                  LastKnownLocation="ModelingProject1.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="56b542c6-ca2e-4313-a11b-95b101317613"
+            name="Send invoice"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="af312492-dc30-455d-b68f-0e2551e1ca72"
+                isLeaf="false">
+                <mergeNodeMoniker
+                  Id="1ac19279-f76f-4733-a076-d8e12199e3a9"
+                  LastKnownName="Merge3"
+                  LastKnownLocation="ModelingProject1.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="444dc29f-06c3-4a0f-8b4c-1c4665083c8d"
+            name="Exit"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="8c31ce28-68f9-4209-9b5e-cb44a328a900"
+                isLeaf="false">
+                <activityFinalNodeMoniker
+                  Id="e502e3bc-e256-470d-b225-abebf41d70c8"
+                  LastKnownName="ActivityFinal1"
+                  LastKnownLocation="ModelingProject1.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <decisionNode
+            Id="22dc6f40-50ee-4661-a57c-e8b11098c5fd"
+            name="Decision2"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="3ca1b924-ddfc-4812-93f2-90fdf7b864a1"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="3cd3647f-c920-4d6a-820c-1ed099501064"
+                  LastKnownName="Find shippers"
+                  LastKnownLocation="ModelingProject1.uml" />
+              </controlFlow>
+              <controlFlow
+                Id="0cef5415-bbc3-4f53-afbc-f3a219e2c515"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="bdb62366-4314-4507-8013-200c41a3ada1"
+                  LastKnownName="Find driwers"
+                  LastKnownLocation="ModelingProject1.uml" />
+              </controlFlow>
+              <controlFlow
+                Id="9f2100bb-aa4a-422a-9645-1fb1f7b21a16"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="ee2d0147-44e4-429d-b7fe-dfe2ea299c27"
+                  LastKnownName="Find forwarder"
+                  LastKnownLocation="ModelingProject1.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <mergeNode
+            Id="107edb1e-9571-4a96-a80e-b0ef15e66928"
+            name="Merge1"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="759dbca7-c396-4cee-9f09-4641afb80a13"
+                isLeaf="false">
+                <mergeNodeMoniker
+                  Id="fb748d48-c034-4dd6-8c53-a12ec9acad29"
+                  LastKnownName="Merge4"
+                  LastKnownLocation="ModelingProject1.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </mergeNode>
+          <decisionNode
+            Id="1805856a-b2a8-4e85-bda0-5b7fdadf8f19"
+            name="Decision3"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="c14e0f3b-53fe-424d-afea-6701fbc10911"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="58e6be90-1ff1-4b92-beb8-23870dfc08d4"
+                  LastKnownName="Create invoice"
+                  LastKnownLocation="ModelingProject1.uml" />
+              </controlFlow>
+              <controlFlow
+                Id="0e523401-a7f3-42fe-acb3-e17c25b3cc5d"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="5ca8da45-859a-47aa-883c-cd087f503ed9"
+                  LastKnownName="Create waybill"
+                  LastKnownLocation="ModelingProject1.uml" />
+              </controlFlow>
+              <controlFlow
+                Id="3c10d0bc-d849-499c-9c46-50d3505ddc2d"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="a6d2707a-a7ec-4090-a31e-6d6cda9bd004"
+                  LastKnownName="Create score"
+                  LastKnownLocation="ModelingProject1.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <mergeNode
+            Id="ccdb439a-44c8-4116-acc7-6168d04ad490"
+            name="Merge2"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="1c39ac9b-f4de-4ed7-b007-993ea5810489"
+                isLeaf="false">
+                <mergeNodeMoniker
+                  Id="fb748d48-c034-4dd6-8c53-a12ec9acad29"
+                  LastKnownName="Merge4"
+                  LastKnownLocation="ModelingProject1.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </mergeNode>
+          <decisionNode
+            Id="dc504c71-c9d6-464b-bfab-d8f3011ffa0c"
+            name="Decision4"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="304b2d0c-4c60-4463-8266-a19281b96a05"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="2a35eeb1-98a4-4274-b5e3-6d4cd5b16899"
+                  LastKnownName="Send score"
+                  LastKnownLocation="ModelingProject1.uml" />
+              </controlFlow>
+              <controlFlow
+                Id="49f6fe52-d9ce-4a5b-afc7-07553faaafdb"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="185772de-679a-4146-97f5-6634173f4c0e"
+                  LastKnownName="Send waybill"
+                  LastKnownLocation="ModelingProject1.uml" />
+              </controlFlow>
+              <controlFlow
+                Id="148d033e-82e8-40ce-9c04-bcf86a97814a"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="56b542c6-ca2e-4313-a11b-95b101317613"
+                  LastKnownName="Send invoice"
+                  LastKnownLocation="ModelingProject1.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <mergeNode
+            Id="1ac19279-f76f-4733-a076-d8e12199e3a9"
+            name="Merge3"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="26d5dffa-8991-406e-9b56-08c7296935b0"
+                isLeaf="false">
+                <mergeNodeMoniker
+                  Id="fb748d48-c034-4dd6-8c53-a12ec9acad29"
+                  LastKnownName="Merge4"
+                  LastKnownLocation="ModelingProject1.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </mergeNode>
+          <mergeNode
+            Id="fb748d48-c034-4dd6-8c53-a12ec9acad29"
+            name="Merge4"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="40986d03-dff1-4e50-b321-fb0c64b73aab"
+                isLeaf="false">
+                <mergeNodeMoniker
+                  Id="7debc6f2-014e-4ccb-a4f7-ede99499de66"
+                  LastKnownName="Merge5"
+                  LastKnownLocation="ModelingProject1.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </mergeNode>
+          <initialNode
+            Id="b9facaaa-1ea4-4cab-b1e4-665dde976af9"
+            name="Initial1"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="10046f84-909e-4cd9-b7a7-dfcf89684fdc"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="4303d721-0688-4f39-830a-a316b62468c7"
+                  LastKnownName="Autorization"
+                  LastKnownLocation="ModelingProject1.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </initialNode>
+          <mergeNode
+            Id="7debc6f2-014e-4ccb-a4f7-ede99499de66"
+            name="Merge5"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="30017ff8-e170-4855-9ba1-f9d994f1e440"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="67b6841e-7e46-44a6-a609-14b728cfd945"
+                  LastKnownName="Print menu"
+                  LastKnownLocation="ModelingProject1.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </mergeNode>
+        </nodes>
+      </activity>
+    </packageHasNamedElement>
+  </packagedElements>
+  <primitiveType
+    Id="220a3521-e091-4221-bae9-3ef9018e845c"
+    name="Integer"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
+    name="Boolean"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+    name="String"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="3ab42e7d-4969-445a-b209-471f5cb8209c"
+    name="UnlimitedNatural"
+    isAbstract="false"
+    isLeaf="false" />
+</modelStoreModel>

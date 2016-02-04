@@ -1,0 +1,281 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="7499d7a2-f44a-4e30-af1d-678649a090c2" name="MPP_Usecase" linkedPackageId="3f0eb8da-8d56-4c07-97cc-dc88a6d0a488" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
+  <profileInstances>
+    <packageHasProfileInstances Id="a1cac2a3-7527-48c3-9385-c00c4cf08012">
+      <profileInstance Id="0e3ba4d4-4a61-4348-b401-48f51c54f7a9" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="dfdac578-488c-4d4d-9946-6c6a08cc8289">
+      <profileInstance Id="32806ca9-b033-4364-94fb-a2e6973a43f7" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <useCaseModelRootHasTypes>
+      <actor Id="832e5a0b-24a8-4bae-8723-f219a50f76ad" name="Freighter" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="87e03aaa-06a8-4274-941e-3b1f34de192b" />
+        <targetEnds>
+          <association Id="03a75d1a-7265-4f61-8576-a0c42a511958" isDerived="false" sourceEndRoleName="Freighter" targetEndRoleName="Registration" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="ce5e9d0b-c8f8-437c-9983-240cfa64f26c" LastKnownName="Registration" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="9b156274-99da-4e26-b13d-b6324c0aecf9" name="Freighter" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="202a8886-7f54-48b8-ac4c-5dbbceafe367" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="4dec68ca-6780-425f-92b3-24d33af34fed" name="Registration" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="16109550-a9f0-4d87-86c8-c45d078902a0" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="68e60775-009c-427e-91cf-db5f7b9423f9" />
+          </association>
+          <association Id="e2e5fe67-8656-462e-b35a-c7aa15056164" isDerived="false" sourceEndRoleName="Freighter" targetEndRoleName="waybill" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="1ca8f3f6-53e3-4cc3-8a93-62989c34f66e" LastKnownName="Generate waybill" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="5942e675-18dd-4362-a691-f2cccc6a17c8" name="Freighter" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="f80ebe66-af98-4f5b-8dd8-8887617cd1a3" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="f9172d2e-381f-4cb1-834e-f48246c8f96a" name="waybill" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="a63d2a4a-8048-43ac-8dd3-47e6d6fd61c0" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="a5ec4392-3805-4161-b2cd-0fb77db5bd27" />
+          </association>
+          <association Id="04210229-4da1-48ba-b6e9-07df93c5f257" isDerived="false" sourceEndRoleName="Freighter" targetEndRoleName="Generate contract" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="07420ed5-4949-4b7c-8e09-f0b8aba1a117" LastKnownName="Generate contract" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="285eb8a6-78b6-4270-97cc-f6a1f4839e1c" name="Freighter" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="87cbced4-2db7-4b60-8c73-61fb9c2134d5" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="5fce855d-9560-4003-81b4-45d9bd48c307" name="Generate contract" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="444ac31a-77cd-4d22-9c8c-96d14f87e14f" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="b18bee50-e309-41ec-be16-00c875e5d7b3" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <actor Id="06cf960f-8174-47a6-a133-ad2f66f626da" name="Shipper" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="5ec70669-74da-44fa-ab8f-b4c88e56f605" />
+        <targetEnds>
+          <association Id="951aa8ba-7f0c-4b59-af4d-69f6e0d7dec1" isDerived="false" sourceEndRoleName="Shipper" targetEndRoleName="Registration" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="ce5e9d0b-c8f8-437c-9983-240cfa64f26c" LastKnownName="Registration" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="57b68ab3-f074-48f3-9587-ea9fbfe29648" name="Shipper" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="b8582e47-0e05-4785-a135-8c83274caa5d" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="16b20fce-a014-4077-8571-b8254c0ee200" name="Registration" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="b1f1b1b2-9be4-46db-8e5a-8750524d6b5a" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="aefee4ed-2787-418c-9def-c3de72f7f426" />
+          </association>
+          <association Id="515ca232-6721-49b1-a902-a210fe9b468f" isDerived="false" sourceEndRoleName="Shipper" targetEndRoleName="Generate delivery note" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="ef93e819-a500-4a1e-be8e-41ff72b3c810" LastKnownName="Generate delivery note" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="a8138869-b5a7-43a8-a366-cbc866393f4e" name="Shipper" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="f6664379-da32-48ee-bd99-0441931c2e87" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="fe0d5dd9-fc4b-4472-886f-0945d12fd152" name="Generate delivery note" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="a546679b-57f8-443d-8e3a-60766b81fc5c" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="5daa5012-6a34-4c68-8d8f-0b576ee58926" />
+          </association>
+          <association Id="2edd58e8-4790-4e87-aea9-617ac2773e8f" isDerived="false" sourceEndRoleName="Shipper" targetEndRoleName="Generate application" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="3c021382-58e4-4825-b243-58bbd454c09b" LastKnownName="Generate application" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="a501f57b-79d7-43d0-ab0c-6b3bd49147d4" name="Shipper" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="ed74d72e-c412-4d6b-8de0-fd433dbc429e" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="a12a3d7b-0507-43f4-879e-bee6851a98c4" name="Generate application" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="9df446a3-ea2a-4615-a124-6f163989de1d" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="1c7f60a8-9605-4a63-b87d-ef476c47dba0" />
+          </association>
+          <association Id="aead7996-87c1-4ea8-a914-c774c84108b9" isDerived="false" sourceEndRoleName="Shipper" targetEndRoleName="UseCase1" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="2265ead7-2a46-4b5d-8b5e-45221554e31c" LastKnownName="Generate invoice" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="99b7f7c2-3afa-4486-975d-daf883aa9a79" name="Shipper" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="d8aac126-0a2d-4bff-8c13-4be23d0c691d" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="e92b4088-3ed7-4dd4-b1b4-283b786f9933" name="UseCase1" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="ba89d49f-a1fd-447d-82a4-c7595dd144de" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="a48b8910-3fd9-4776-aa72-afc5190c52ab" />
+          </association>
+          <association Id="99f6db9b-e8b7-4320-a0bb-66ceebdbf798" isDerived="false" sourceEndRoleName="Shipper" targetEndRoleName="Generate contract" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="07420ed5-4949-4b7c-8e09-f0b8aba1a117" LastKnownName="Generate contract" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="7a768b36-f1c3-48c8-94eb-bacc00d9de63" name="Shipper" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="b9083a45-514c-4714-93b6-8767772c8525" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="77343362-f638-4bae-a068-be77ad8c070c" name="Generate contract" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="70afa001-72ed-414d-8f8e-5b5fe21ebb3c" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="c454ee65-84e4-4a82-8199-58ea423b957f" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <actor Id="96155b8d-8673-4a1b-a708-11575f9e47d6" name="Forwader" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="4f7561f4-d65c-47be-98bb-871c24486148" />
+        <targetEnds>
+          <association Id="a3d422c5-2cd3-4ad9-95bb-2cfbcdbe7bae" isDerived="false" sourceEndRoleName="Forwader" targetEndRoleName="Registration" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="ce5e9d0b-c8f8-437c-9983-240cfa64f26c" LastKnownName="Registration" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="4140a1bc-8000-453f-94ee-3f150281100c" name="Forwader" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="d1d3c911-6241-4c6f-90a5-45bc27026e8f" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="22ea332f-58db-4284-94d3-3dd1bd8ccbd0" name="Registration" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="7f450479-a293-4967-bd55-846901056519" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="a9060a25-0563-47a1-949d-75ced905afd3" />
+          </association>
+          <association Id="0a13aa1d-a5d3-43aa-8f00-f0acb46924b3" isDerived="false" sourceEndRoleName="Forwader" targetEndRoleName="Generate delivery note" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="ef93e819-a500-4a1e-be8e-41ff72b3c810" LastKnownName="Generate delivery note" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="5235b0ce-42d8-46a6-8904-2050e4d757a8" name="Forwader" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="7ce6a3f7-dd7c-4de1-8f8d-ec329b111026" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="a42b1e53-e5b7-4234-98a6-4ed2ea481999" name="Generate delivery note" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="6f31fb8e-928a-4326-9efa-4922394e171a" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="da590044-52dc-411d-a0ec-5692d58d8170" />
+          </association>
+          <association Id="f1bff1e7-8b9e-497d-8d79-00695e376380" isDerived="false" sourceEndRoleName="Forwader" targetEndRoleName="Generate application" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="3c021382-58e4-4825-b243-58bbd454c09b" LastKnownName="Generate application" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="012a372e-8f78-46fe-8c2c-34e24b4dbab5" name="Forwader" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="5f044c99-fd4f-47a3-9e4f-ba567fb503f6" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="43c1b002-393e-4b5e-afbc-6cb0d7eb3c79" name="Generate application" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="c13b2d47-4056-4e0e-b299-7e69f1ed7a12" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="cdc86505-d835-4960-a33b-d4d20a85c08c" />
+          </association>
+          <association Id="ace53073-e515-48ac-9787-36479c638008" isDerived="false" sourceEndRoleName="Forwader" targetEndRoleName="UseCase1" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="2265ead7-2a46-4b5d-8b5e-45221554e31c" LastKnownName="Generate invoice" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="edacbf8a-5b30-4658-8a1e-77895dde84ba" name="Forwader" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="b804bfa8-c289-4bf2-bb66-0e3420f5083a" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="229624e3-5594-4c0e-8588-a01602a0cd63" name="UseCase1" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="9378d019-9aee-45dd-85e5-51c80c0d12de" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="c79ff356-99ea-456c-b0a3-e4d43a5e8502" />
+          </association>
+          <association Id="dc626538-dd78-4116-907e-18109a688fd2" isDerived="false" sourceEndRoleName="Forwader" targetEndRoleName="Generate contract" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="07420ed5-4949-4b7c-8e09-f0b8aba1a117" LastKnownName="Generate contract" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="a398a9b4-e0d2-4ccf-9fae-5cb2541cbdd8" name="Forwader" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="8dd00019-0a05-41cd-b6f9-e1b3ea315181" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="e6fd7df5-000b-4cfa-bf38-21bf7b13d9f3" name="Generate contract" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="d3e31c73-d55e-470d-b706-7a2b05f8c246" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="ee1eb7ae-58c0-4087-a7e4-e35a39ea0e31" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="ce5e9d0b-c8f8-437c-9983-240cfa64f26c" name="Registration" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="81246218-c91e-4585-b5e0-26e6e26068ed" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="1ca8f3f6-53e3-4cc3-8a93-62989c34f66e" name="Generate waybill" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="0edff377-de5d-4344-b75b-18ebbd520b0d" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="ef93e819-a500-4a1e-be8e-41ff72b3c810" name="Generate delivery note" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="1dcd3554-e09f-46a4-9b3e-3b0c6f64dca6" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="3c021382-58e4-4825-b243-58bbd454c09b" name="Generate application" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="25498578-e890-4280-acad-a5b542752b4a" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="2265ead7-2a46-4b5d-8b5e-45221554e31c" name="Generate invoice" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="91f9976b-b531-4da8-a918-c99cc939e04c" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="07420ed5-4949-4b7c-8e09-f0b8aba1a117" name="Generate contract" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="5df92122-9f67-4c98-92e0-604cda633741" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+  </packagedElements>
+  <package Id="3f0eb8da-8d56-4c07-97cc-dc88a6d0a488" name="ModelingProject1">
+    <elementDefinition Id="635da47b-989a-4de6-b6a5-0b4b1a10d649" />
+  </package>
+</useCaseModelRoot>
